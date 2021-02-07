@@ -1,14 +1,9 @@
 # ocitjs
-bot line with pro asis
+BOT LINE WITH PROTECT ASIST
 
-Bot dengan 1 cl 5 asis
+Bot dengan 1 cl 4 asis dan 1 ajs
 
 Bisa buat pro Group kalian nih temen2
 
 git clone https://github.com/ocitchanel/ocitjs
 
-jangan lupa di unzip dulu ya
-
-install unzip
-
-pip3 install unzip
