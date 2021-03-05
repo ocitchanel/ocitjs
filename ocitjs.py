@@ -2199,9 +2199,9 @@ def bot(op):
                             try:
                                 arr = []
                                 today = datetime.today()
-                                thn = 2018 
-                                bln = 12     #isi bulannya yg sewa
-                                hr = 17    #isi tanggalnya yg sewa
+                                thn = 2021 
+                                bln = 3     #isi bulannya yg sewa
+                                hr = 5    #isi tanggalnya yg sewa
                                 future = datetime(thn, bln, hr)
                                 days = (str(future - today))
                                 comma = days.find(",")
@@ -3051,13 +3051,13 @@ def bot(op):
                         elif cmd == "kagame" or cmd == "cek":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                cl.sendMessage(msg.to, "Masih hidup kaak!")
-                                ki.sendMessage(msg.to, "Masih hidup kaak!")
-                                kk.sendMessage(msg.to, "Masih hidup kaak!")
-                                kc.sendMessage(msg.to, "Masih hidup kaak!")
-                                kb.sendMessage(msg.to, "Masih hidup kaak!")
-                                sw.sendMessage(msg.to, "Masih Hidup ga yaa?")
-                                cl.sendMessage(msg.to, "Eh si dudul, haha")
+                                cl.sendMessage(msg.to, "Dua")
+                                ki.sendMessage(msg.to, "Tiga")
+                                kk.sendMessage(msg.to, "Makan Kentang")
+                                kc.sendMessage(msg.to, "Kami sudah Datang!")
+                                kb.sendMessage(msg.to, "betul betul betul")
+                                sw.sendMessage(msg.to, "Eh kok jadi upin ipin")
+                                cl.sendMessage(msg.to, "Auyaa, ini kan Konoha dudul!")
 
 
                           elif "0" in msg.text:
@@ -3139,6 +3139,15 @@ def bot(op):
                                 ginfo = cl.getGroup(msg.to)
                                 G.preventedJoinByTicket = False
                                 cl.inviteIntoGroup(msg.to, [Amid,Bmid,Cmid,Dmid,Zmid])
+                                ki.acceptGroupInvitation(msg.to)
+                                kk.acceptGroupInvitation(msg.to)
+                                kc.acceptGroupInvitation(msg.to)
+                                kb.acceptGroupInvitation(msg.to)
+                                ke.acceptGroupInvitation(msg.to)
+                                cl.sendMessage(msg.to,"ɢʀᴏᴜᴩ"+str(ginfo.name)+"Siap! udh masuk semua bos!")
+                            except:
+                                pass
+                                
 
                         elif cmd == "keluar":
                           if wait["selfbot"] == True:
